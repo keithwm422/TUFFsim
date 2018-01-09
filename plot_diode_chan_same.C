@@ -1,4 +1,13 @@
-// This will plot the diode channel in passing and not passing events for Tuffs on and tuffs off case respecitively. 
+// This will plot the diode channel in passing 
+// and not passing events for Tuffs on and tuffs off case respecitively.
+///////////////////////////////////////////////////////////////////////// 
+// In order to pass the right channel from the branches used here 
+// (i.e fDiodeOutputs[][]) to plot, need to find the channel number 
+// from the AnitaGeomTool. Use the command 
+// AnitaGeomTool::getChanIndexFromRingPhiPol(AnitaRing::kTopRing, 14, AnitaPol::kHorizontal)
+// in root to get the channel number corresponding to:
+// Top ring, phi sector 15, and Horizontal polarization antenna. 
+
 #include <iostream>
 using namespace std;
 
